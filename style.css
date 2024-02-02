@@ -113,6 +113,8 @@ p {
 .contact-form button {
     width: 30%;
     height: 51px;
+    padding: 0;
+    background: transparent;
     margin: 1.5rem 1rem 0;
     border: none;
     border-radius: 6px;
