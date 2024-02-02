@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+  <body>
+    <section class="contact-form">
+      <h1>Tierra batida Database</h1>
+      <p>Completa tus datos para recibir ofertas y promociones!</p>
+      
+      <form onsubmit="sendEmail(); reset(); return false">
+
+        
+          
+        <div class="input-group">
+          <label for="name">Nombre</label>
+          <input id="name" style="text-transform:capitalize" name="name" type="text" required/>
+        </div>
+        
+        <div class="input-group">
+          <label for="name">Apellido</label>
+          <input id="lastname" style="text-transform:capitalize" name="lastname" type="text" required/>
+        </div>
+        
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required/>
+        </div>
+        
+        <div class="input-group">
+          <label for="phone">Teléfono</label>
+          <input id="phone" name="phone" type="number" required/>
+        </div>
+        
+        
+        <div class="input-group">
+          <p>Encordas?</p>
+          <input id="string" name="string" type="radio" value="Si"/>
+          <label class="inline" for="string">Si</label>
+          
+          <input id="string" name="string" type="radio" value="No"/>
+          <label class="inline" for="string">No</label>
+        </div>
+        <input name="secret" type="hidden" value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7"/>
+        <button id="button" type="submit"></button>
+      </form>
+    </section>
+    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+      <script src="index.js"></script>
+    </body>
+    </html>
